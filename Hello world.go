@@ -26,6 +26,7 @@ func split(sum float32) (x, y float32) { //if the result is a float, arguments s
 }
 
 var c, python, java bool //declares a list of variables
+//x := 15 //assignment with 'warlus' opeartor is impossible outside a function, should begin with 'var'
 
 func main() {
 	fmt.Println("Hello, world")                          //Function accepts only double quotes "..." for strings
@@ -40,5 +41,5 @@ func main() {
 	fmt.Println(split(19))
 
 	var i int
-	fmt.Println(i, c, python, java) // why it prints false three times?
+	fmt.Println(i, c, python, java) // c, python and java = bool variables, default for those is False. i = int, default is '0'
 }
